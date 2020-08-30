@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.blind{
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin:1px;
+}
+table, td, th{
+	border-collapse: collapse;
+}
+table{
+	width: 500px;
+	table-layout: fixed;
+	/*칸의 넓이가 동일해진다 >> 안하면 글자수에따라 크기가 알아서 정해짐
+	성능의 차이가 크기때문에 반드시 써야한다.	*/
+	font-size: 13px;
+}
+.th_age, .th_gender{
+	width: 90px;
+}
+
+.col{
+	width: 90px;
+}
+
+th{
+	font-weight: bold;
+}
+th,td{
+	border-bottom: 1px solid #e1e1e1;
+	vertical-align: middle;
+}
+thead th{
+	padding:5px 0;
+	border-bottom: 2px solid #000;
+}
+tbody td{
+	height: 40px;
+}
+.th_view, .th_rate, tbody td{
+	text-align: right;
+}
+.th_male, .th_female{
+	background-color: #f8f8f8;
+}
+
+

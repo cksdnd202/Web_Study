@@ -1,0 +1,1 @@
+const name= "crong";const result = name || "codesquad";console.log(result);
